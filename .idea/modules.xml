@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyDemos.iml" filepath="$PROJECT_DIR$/MyDemos.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/immersivestatusbar/immersivestatusbar.iml" filepath="$PROJECT_DIR$/immersivestatusbar/immersivestatusbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/immersivestatusbar/immservestatusbar.iml" filepath="$PROJECT_DIR$/immersivestatusbar/immservestatusbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/postdetailapp/postdetailapp.iml" filepath="$PROJECT_DIR$/postdetailapp/postdetailapp.iml" />
     </modules>
   </component>
 </project>

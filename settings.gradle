@@ -1,1 +1,1 @@
-include ':app', ':immersivestatusbar'
+include ':app', ':immersivestatusbar', ':postdetailapp'
