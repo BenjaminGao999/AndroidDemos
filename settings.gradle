@@ -1,1 +1,1 @@
-include ':app', ':immersivestatusbar', ':todo-android'
+include ':app', ':immersivestatusbar', ':todo-android', ':upushapp'
