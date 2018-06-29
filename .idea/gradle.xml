@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bga-photopicker" />
+            <option value="$PROJECT_DIR$/imagepicker" />
             <option value="$PROJECT_DIR$/immersivestatusbar" />
             <option value="$PROJECT_DIR$/todo-android" />
             <option value="$PROJECT_DIR$/upushapp" />

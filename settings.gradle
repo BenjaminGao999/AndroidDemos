@@ -1,1 +1,1 @@
-include ':app', ':immersivestatusbar', ':todo-android', ':upushapp'
+include ':app', ':immersivestatusbar', ':todo-android', ':upushapp', ':imagepicker', ':bga-photopicker'
