@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyDemos.iml" filepath="$PROJECT_DIR$/MyDemos.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bga-photopicker/bga-photopicker.iml" filepath="$PROJECT_DIR$/bga-photopicker/bga-photopicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/bga-photopicker/bga-photopicker-library.iml" filepath="$PROJECT_DIR$/bga-photopicker/bga-photopicker-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/imagepicker/imagepicker.iml" filepath="$PROJECT_DIR$/imagepicker/imagepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/immersivestatusbar/immersivestatusbar.iml" filepath="$PROJECT_DIR$/immersivestatusbar/immersivestatusbar.iml" />
