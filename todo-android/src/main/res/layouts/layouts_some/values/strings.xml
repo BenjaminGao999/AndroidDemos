@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_mvp_template">mvp模版</string>
+    <string name="commit">提交</string>
+    <string name="text_title">标题</string>
+    <string name="text_content">内容</string>
+    <string name="item_no_more_data">没有更多数据了</string>
+    <string name="app_name_module">todo-android</string>
+</resources>

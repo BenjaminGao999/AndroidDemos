@@ -1,11 +1,300 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>-->
+
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--Theme Toolbar start-->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/dimen_sp_14</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="actionMenuTextColor">@color/color_ffffff</item>
+    </style>
+    <!--Theme Toolbar end-->
+
+
+    <style name="CustomDialog" parent="@style/AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--common dialog animation start-->
+    <style name="Dialog.FadeScale" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/fade_in_center</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_center</item>
+    </style>
+
+    <style name="dialog_bottom_slide">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="BottomDialog" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <!--v2 -->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.AppTheme" />
+
+    <style name="AppTheme.OverlapSystemBar" parent="Base.AppTheme" />
+
+    <style name="Base.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="colorPrimary">@color/theme_app_color</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorPrimaryDark">@color/theme_app_color</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_commit"-->
+    <!--android:text="@string/toilet_installing_device_add_submit"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/dimen_dp_18"-->
+    <!--android:layout_width="@dimen/dimen_dp_300"-->
+    <!--android:layout_height="@dimen/dimen_dp_47"-->
+    <!--android:layout_marginTop="@dimen/dimen_dp_50"-->
+    <!--android:background="@drawable/selector_rect_cornor_theme_yellow" />-->
+
+    <style name="StyleBtnCommit">
+        <item name="android:layout_width">@dimen/dimen_dp_300</item>
+        <item name="android:layout_height">@dimen/dimen_dp_47</item>
+        <item name="android:textSize">@dimen/dimen_dp_18</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:background">@drawable/selector_rect_cornor_theme_yellow</item>
+        <item name="android:layout_marginTop">@dimen/dimen_dp_50</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_dp_50</item>
+    </style>
+
+    <style name="StyleTextViewTitleList">
+        <item name="android:textColor">@color/color_title_list</item>
+        <item name="android:textSize">@dimen/size_title_list</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="StyleTextViewContentList">
+        <item name="android:textColor">@color/color_content_list</item>
+        <item name="android:textSize">@dimen/size_content_list</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_dp_5</item>
+    </style>
+
+
+    <!--mine item options-->
+    <style name="StyleTextViewContentOptions" parent="@style/StyleTextViewContentList">
+        <item name="android:layout_marginLeft">@dimen/dimen_dp_10</item>
+    </style>
+
+
+    <style name="StyleItemLinearLayoutWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimen_dp_5</item>
+        <item name="android:paddingBottom">@dimen/dimen_dp_5</item>
+        <item name="android:background">@color/color_ffffff</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+
+    <style name="StyleItemLinearLayoutContent">
+        <item name="android:minHeight">@dimen/dimen_dp_50</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dimen_dp_5</item>
+        <item name="android:paddingRight">@dimen/dimen_dp_5</item>
+        <item name="android:paddingTop">@dimen/dimen_dp_5</item>
+        <item name="android:paddingBottom">@dimen/dimen_dp_5</item>
+        <item name="android:background">@color/color_ffffff</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 行内 多行-->
+    <style name="StyleItemLinearLayoutContentLinein" parent="StyleItemLinearLayoutContent">
+        <item name="android:minHeight">@dimen/dimen_dp_20</item>
+    </style>
+
+
+    <style name="StyleFrameLayoutWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/app_bg</item>
+    </style>
+
+
+    <style name="StyleDialogSuccessful" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:backgroundDimAmount">0.8</item>-->
+    </style>
+
+
+    <!--<TextView-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:id="@+id/tv_device_info_perfect"-->
+    <!--android:layout_width="@dimen/dimen_dp_80"-->
+    <!--android:layout_height="@dimen/dimen_dp_35"-->
+    <!--android:background="@drawable/selector_rect_cornor_theme_yellow"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/device_install_item_toilet_info_prefect" />-->
+
+    <style name="StyleItemRectOvalTv">
+        <item name="android:layout_width">@dimen/dimen_dp_80</item>
+        <item name="android:layout_height">@dimen/dimen_dp_35</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_rect_cornor_theme_yellow</item>
+    </style>
+
+    <!--<EditText-->
+    <!--android:id="@+id/edt_checking_advantages"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/dimen_dp_10"-->
+    <!--android:background="@null"-->
+    <!--android:gravity="start"-->
+    <!--android:hint="@string/checking_advantages_hint"-->
+    <!--android:textSize="@dimen/dimen_dp_14"-->
+    <!--android:padding="@dimen/dimen_dp_8"-->
+    <!--android:textCursorDrawable="@drawable/cursor_common" />-->
+
+    <!--框定一个方形区域， 填写意见-->
+    <style name="StyleEditTextRectArea">
+        <item name="android:textSize">@dimen/size_content_list</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_common</item>
+        <item name="android:paddingTop">@dimen/dimen_dp_10</item>
+        <item name="android:paddingBottom">@dimen/dimen_dp_10</item>
+        <item name="android:paddingRight">@dimen/dimen_dp_5</item>
+        <item name="android:paddingLeft">@dimen/dimen_dp_5</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginTop">@dimen/dimen_dp_10</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_dp_10</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_dp_10</item>
+        <item name="android:layout_marginRight">@dimen/dimen_dp_10</item>
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">@dimen/dimen_dp_100</item>
+    </style>
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dimen_dp_1"-->
+    <!--android:layout_marginLeft="@dimen/dimen_dp_12"-->
+    <!--android:layout_marginRight="@dimen/dimen_dp_12"-->
+    <!--android:background="@color/color_cccccc" />-->
+    <style name="StyleLineHorizentalView">
+
+        <item name="android:background">@color/color_cccccc</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_dp_12</item>
+        <item name="android:layout_marginRight">@dimen/dimen_dp_12</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_dp_1</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+
+    <!--我的 item options entry-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="@dimen/dimen_dp_30"-->
+    <!--android:src="@drawable/ic_arrow_right_black" />-->
+
+
+
+
+    <style name="StyleIconImageViewList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_dp_5</item>
+    </style>
+
+    <!--<TextView-->
+    <!--android:textSize="@dimen/dimen_dp_20"-->
+    <!--android:textColor="@color/color_000000"-->
+    <!--android:layout_width="@dimen/dimen_dp_60"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/mine_employee_id" />-->
+
+    <style name="StyleTextViewEmployeeEdit">
+
+        <item name="android:textColor">@color/color_000000</item>
+        <item name="android:textSize">@dimen/dimen_dp_20</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!--填写信息-->
+    <style name="StyleEditTextTextsList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:editTextColor">@color/color_content_list</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_common</item>
+        <item name="android:textColorHint">@color/color_cccccc</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/size_content_list</item>
+        <item name="android:layout_marginRight">@dimen/dimen_dp_10</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_dp_10</item>
+    </style>
+
+
+
+
+    <!--parent -->
+    <style name="StyleEditTextWithUnderLine" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/size_content_list</item>
+        <item name="android:textColorHint">@color/color_cccccc</item>
+        <item name="android:editTextColor">@color/color_000000</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_common</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_dp_50</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_dp_10</item>
+        <item name="android:layout_marginRight">@dimen/dimen_dp_10</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawableBottom">@drawable/selector_edittext_undertline</item>
+        <item name="android:drawablePadding">@dimen/dimen_dp_5</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <!--登陆账号-->
+    <style name="StyleEditTextAccount" parent="StyleEditTextWithUnderLine">
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!--密码-->
+    <style name="StyleEditTextPsd" parent="StyleEditTextWithUnderLine">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
 
 </resources>
