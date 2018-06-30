@@ -62,7 +62,6 @@ public class BGAPhotoPickerActivity extends BGAPPToolbarActivity implements BGAO
 
     private static final String STATE_SELECTED_PHOTOS = "STATE_SELECTED_PHOTOS";
 
-
     /**
      * 拍照的请求码
      */
